@@ -1,0 +1,66 @@
+@use "../../variables" as *;
+@media screen and (min-width: $breakpoint-sm) {
+  .btn {
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    color: $white;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontsize-xs;
+    line-height: 20px;
+    display: flex;
+    padding: 12.5px 64px;
+    width: 180px;
+    height: 45px;
+    left: 20px; 
+    top:20px
+
+    background-color: $black;
+  }
+  &:hover {
+    background-color: $orange_nistre;
+  }
+}
+@media screen and (min-width: $breakpoint-md) {
+  .btn {
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    color: $white;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontsize-xs;
+    line-height: 20px;
+    display: flex;
+    padding: 17.5px 49px;
+    width: 150px;
+    height: 55px;
+    left: 20px; 
+    top:20px
+  }
+  &:hover {
+    background-color: $orange_nistre;
+  }
+}
+@media screen and (min-width: $breakpoint-lg) {
+  .btn {
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    color: $white;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontsize-xs;
+    line-height: 20px;
+    display: flex;
+    padding: 17.5px 74px;
+    width: 200px;
+    height: 55px;
+    left: 20px; 
+    top:20px
+  }
+  &:hover {
+    background-color: $orange_nistre;
+  }
+}
