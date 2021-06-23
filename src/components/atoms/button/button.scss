@@ -8,17 +8,16 @@
   font-size: $fontsize-xs;
   line-height: 20px;
   display: flex;
-}
-.btn:hover {
-  color: $white;
-  background-color: $orange_nistre;
+
+  &:hover {
+    background-color: $orange_nistre;
+  }
 }
 @media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
   .btn {
     padding: 13px 64px;
     width: 180px;
     height: 45px;
-    background-color: $black;
   }
 }
 @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
