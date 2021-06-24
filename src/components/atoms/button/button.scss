@@ -1,36 +1,36 @@
 @use "../../variables" as *;
 .btn {
-  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $white;
+  background-color: $black;
+  position: absolute;
   font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: normal;
-  font-size: $fontsize-xs;
+  font-size: 14px;
   line-height: 20px;
   display: flex;
+  align-items: center;
 
-  &:hover {
-    color: $white;
-    background-color: $orange_nistre;
-  }
-}
-@media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-  .btn {
+  @media screen and (min-width: $breakpoint-sm) {
     padding: 13px 64px;
     width: 180px;
     height: 45px;
   }
-}
-@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
-  .btn {
+
+  @media screen and (min-width: $breakpoint-md) {
     padding: 18px 49px;
     width: 150px;
     height: 55px;
   }
-}
-@media screen and (min-width: $breakpoint-lg) {
-  .btn {
+
+  @media screen and (min-width: $breakpoint-lg) {
     padding: 18px 74px;
     width: 200px;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $orange_nistre;
   }
 }
