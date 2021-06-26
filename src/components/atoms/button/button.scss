@@ -9,23 +9,21 @@
   font-family: "Noto Sans JP";
   font-size: 14px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-
+  font-style: normal;
+  font-weight: normal;
+  flex-direction: row;
+  text-align: center;
   @media screen and (min-width: $breakpoint-sm) {
-    padding: 13px 64px;
     width: 180px;
     height: 45px;
   }
 
   @media screen and (min-width: $breakpoint-md) {
-    padding: 18px 49px;
     width: 150px;
     height: 55px;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    padding: 18px 74px;
     width: 200px;
   }
 
