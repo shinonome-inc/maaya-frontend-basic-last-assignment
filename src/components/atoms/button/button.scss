@@ -13,11 +13,8 @@
   font-weight: normal;
   flex-direction: row;
   text-align: center;
-  @media screen and (min-width: $breakpoint-sm) {
-    width: 180px;
-    height: 45px;
-  }
-
+  width: 180px;
+  height: 45px;
   @media screen and (min-width: $breakpoint-md) {
     width: 150px;
     height: 55px;
