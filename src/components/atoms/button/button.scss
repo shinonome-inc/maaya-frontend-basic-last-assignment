@@ -1,5 +1,6 @@
 @use "../../variables" as *;
-.btn {
+.btn {transition: 0.2s ease;
+  border-radius: 0%;
   background-color: $black;
   color: $white;
   width: 180px;
