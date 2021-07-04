@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.bgc {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 128px;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 327px;
+    height: 204px;
+  }
+}
+.title {
+  font-family: $fontfamily-mincho;
+  font-size: $fontsize-l;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: $fontsize-xl;
+    margin-bottom: 10px;
+  }
+}
+p {
+  font-family: $fontfamily-gothic;
+  font-size: $fontsize-s;
+}
+
