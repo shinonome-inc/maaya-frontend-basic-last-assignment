@@ -1,15 +1,7 @@
 @use "../../variables" as *;
 
-.bgc {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+.background {
   justify-content: center;
-
-  @media screen and (min-width: $breakpoint-lg) {
-    width: 327px;
-    height: 204px;
-  }
 }
 .text {
   font-family: $fontfamily-mincho;
