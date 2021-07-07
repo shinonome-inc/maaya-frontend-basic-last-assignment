@@ -8,7 +8,7 @@
   font-size: $fontsize-l;
   margin-bottom: 6px;
 
-  @media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: $breakpoint-lg) {
     font-size: $fontsize-xl;
     margin-bottom: 10px;
   }
@@ -17,3 +17,4 @@ p {
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
 }
+
