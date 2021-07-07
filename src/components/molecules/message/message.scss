@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @media screen and (min-width: $breakpoint-lg) {
     width: 327px;
     height: 204px;
@@ -25,4 +25,3 @@ p {
   font-family: $fontfamily-gothic;
   font-size: $fontsize-s;
 }
-
