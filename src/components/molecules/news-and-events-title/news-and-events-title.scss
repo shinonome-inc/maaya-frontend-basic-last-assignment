@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+.allnews{  display: flex;
+  flex-direction: row;
+  align-items: center;}
+.news{
+  font-family: $fontfamily-mincho;
+  font-size: $fontsize-l;
+  margin-right: 16px;
+  
+@media screen and (min-width: $breakpoint-lg){font-size: $fontsize-xxl;}
+}
+
+.news2{font-size: $fontsize-m;}
