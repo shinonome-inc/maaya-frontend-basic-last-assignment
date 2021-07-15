@@ -1,5 +1,14 @@
 @use "../../variables" as *;
 
-.allosirase{
-  font-size: $fontsize-s;
-  font-family:$fontfamily-gothic;}
+h1 {
+  font-size: $fontsize-l;
+  font-family: $fontfamily-mincho;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: $fontsize-xxl;
+  }
+}
+
+p {
+  font-size: $fontsize-m;
+}
