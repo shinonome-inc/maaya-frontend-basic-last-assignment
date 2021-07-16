@@ -1,8 +1,10 @@
 @use "../../variables" as *;
 
-div {
+.news {
+  color: $black;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   h1 {
     font-family: $fontfamily-mincho;
@@ -14,7 +16,7 @@ div {
     }
   }
 
-  p {
+  h2 {
     font-size: $fontsize-m;
   }
 }
