@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+div {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    margin-right: 16px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+    }
+  }
+
+  p {
+    font-size: $fontsize-m;
+  }
+}
