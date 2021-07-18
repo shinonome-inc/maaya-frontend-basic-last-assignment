@@ -1,10 +1,9 @@
 @use "../../variables" as *;
 
-.itirann {
-  color:$black;
+.catalog {
+  color: $black;
   display: flex;
   align-items: center;
-  
 
   h1 {
     font-family: $fontfamily-mincho;
