@@ -1,15 +1,9 @@
 @use "../../variables" as *;
 
-h1 {
+a {
   transition: ease 0.2s;
   font-size: $fontsize-s;
   color: $black;
- 
-
-  &::after {
-    content: "＞";
-    margin-left: 16px;
-  }
 
   &:hover {
     color: $gray_novel;
