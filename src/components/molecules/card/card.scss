@@ -1,6 +1,33 @@
 @use "../../variables" as *;
 
-.card{width:540px;
-  h1{}
+.card {
+  width: 540px;
+  height: 567px;
+  border-radius: 0;
+  .head::before {
+    content: "";
+    border-bottom: 150px solid transparent;
+    border-left: 150px solid $white;
+    position: absolute;
+    z-index: 100;}
+  
+  &::after {
+    content: "card-title";
+    font-weight: bold;
+    font-size: $fontsize-m;
+    display: block;
+    color: $orange_nistre;
+    margin-left:6px;
+    left: 0;
+    position: absolute;
+    z-index: 101;
+  }
 
- 
+}
+.image1.png {
+  position: relative;
+
+.card-body{
+  .card-text{font-size:$fontsize-s;}
+
+}}
