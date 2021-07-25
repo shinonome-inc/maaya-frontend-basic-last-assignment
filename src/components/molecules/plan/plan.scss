@@ -2,17 +2,19 @@
 
 ul {
   list-style: none;
+  
 }
 .odd {
   width: 545px;
   height: 462px;
- 
+
   li:nth-child(1) {
     background-color: $orange-zorba;
     height: 69px;
     font-size: $fontsize-l;
     font-weight: bold;
     color: $white;
+    border:1px solid $gray_gainsboro;
   }
   li:nth-child(2) {
     height: 142px;
@@ -20,11 +22,12 @@ ul {
     color: $orange_nistre;
     font-weight: bold;
     font-size: $fontsize-xxl;
+    border:1px solid $gray_gainsboro;
   }
   li:nth-child(n + 3) {
     height: 60px;
     color: $black;
     font-size: $fontsize-s;
-   
+    border:1px solid $gray_gainsboro;
   }
 }
