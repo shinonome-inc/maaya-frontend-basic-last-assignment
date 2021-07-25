@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+ul {
+  list-style: none;
+}
+.odd {
+  width: 545px;
+  height: 462px;
+ 
+  li:nth-child(1) {
+    background-color: $orange-zorba;
+    height: 69px;
+    font-size: $fontsize-l;
+    font-weight: bold;
+    color: $white;
+  }
+  li:nth-child(2) {
+    height: 142px;
+    background-color: $gray_desertStorm;
+    color: $orange_nistre;
+    font-weight: bold;
+    font-size: $fontsize-xxl;
+  }
+  li:nth-child(n + 3) {
+    height: 60px;
+    color: $black;
+    font-size: $fontsize-s;
+   
+  }
+}
