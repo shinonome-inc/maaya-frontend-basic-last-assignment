@@ -4,30 +4,45 @@
   width: 540px;
   height: 567px;
   border-radius: 0;
+  @media screen and (min-width: $breakpoint-md) {
+    width: 224px;
+    height: 354px;
+    .head {
+      overflow: hidden;
+      .png:hover {
+        transition: ease 0.5s;
+        transform: scale(1.2);
+      }
+    }
+  }
   .head::before {
     content: "";
     border-bottom: 150px solid transparent;
     border-left: 150px solid $white;
     position: absolute;
-    z-index: 100;}
-  
+    z-index: 100;
+  }
+
   &::after {
     content: "card-title";
     font-weight: bold;
     font-size: $fontsize-m;
     display: block;
     color: $orange_nistre;
-    margin-left:6px;
+    margin-left: 6px;
     left: 0;
     position: absolute;
     z-index: 101;
   }
-
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: $fontsize-s;
+      color: $black;
+    }
+    .btn{}
+  }
 }
-.image1.png {
-  position: relative;
-
-.card-body{
-  .card-text{font-size:$fontsize-s;}
-
-}}
