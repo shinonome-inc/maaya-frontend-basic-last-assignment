@@ -7,9 +7,12 @@
     height: 354px;
     .head {
       overflow: hidden;
-      .png:hover {
+      .png {
         transition: ease 0.5s;
-        transform: scale(1.2);
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }
