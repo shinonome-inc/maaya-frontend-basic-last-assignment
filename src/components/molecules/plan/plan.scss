@@ -4,17 +4,17 @@ ul {
   list-style: none;
   
 }
-.odd {
+.odd {text-align: center;
   width: 545px;
   height: 462px;
-
+ 
   li:nth-child(1) {
     background-color: $orange-zorba;
     height: 69px;
     font-size: $fontsize-l;
     font-weight: bold;
     color: $white;
-    border:1px solid $gray_gainsboro;
+    
   }
   li:nth-child(2) {
     height: 142px;
