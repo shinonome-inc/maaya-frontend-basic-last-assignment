@@ -1,18 +1,5 @@
 @use "../../variables" as *;
 
-article {
-  a {
-    width: 458px;
-    height: 83px;
-    display:flex;
-   
-    align-items: center;
-    justify-content: center;
-    font-size: $fontsize-m;
-    color: $black;
-    text-decoration: none;
-    border: 1px solid $gray_gainsboro;
-    box-sizing: border-box;
-    background-color: $white;
-  }
-}
+
+ 
+ 
