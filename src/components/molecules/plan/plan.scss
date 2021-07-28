@@ -1,20 +1,21 @@
 @use "../../variables" as *;
 
-ul {
-  list-style: none;
-  
-}
-.odd {text-align: center;
-  width: 545px;
-  height: 462px;
- 
+.odd {
+  ul {
+    list-style: none;
+  }
   li:nth-child(1) {
     background-color: $orange-zorba;
     height: 69px;
+    width: 222px;
     font-size: $fontsize-l;
     font-weight: bold;
     color: $white;
-    
+    margin: 0 0 -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   li:nth-child(2) {
     height: 142px;
@@ -22,12 +23,40 @@ ul {
     color: $orange_nistre;
     font-weight: bold;
     font-size: $fontsize-xxl;
-    border:1px solid $gray_gainsboro;
+    border: 1px solid $gray_gainsboro;
+    margin: 0 0 -1px;
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    &:before {
+      content: "￥";
+      font-size: $fontsize-s;
+    }
+
+    span {
+      font-size: $fontsize-l;
+    }
+    p {
+      font-size: $fontsize-s;
+      color: $black;
+      font-weight: normal;
+    }
   }
   li:nth-child(n + 3) {
-    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    width: 222px;
     color: $black;
+    background-color: $white;
     font-size: $fontsize-s;
-    border:1px solid $gray_gainsboro;
+    border: 1px solid $gray_gainsboro;
+    margin: 0 0 -1px;
   }
 }
