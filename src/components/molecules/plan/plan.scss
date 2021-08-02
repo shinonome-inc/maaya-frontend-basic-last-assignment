@@ -7,7 +7,7 @@
   li:nth-child(1) {
     background-color: $orange-zorba;
     height: 69px;
-    width: 222px;
+    width: 220px;
     font-size: $fontsize-l;
     font-weight: bold;
     color: $white;
@@ -24,7 +24,7 @@
     font-size: $fontsize-xxl;
     border: 1px solid $gray_gainsboro;
     margin: 0 0 -1px;
-    width: 222px;
+    width: 220px;
     text-align: center;
     padding: 24px 0px;
 
@@ -47,11 +47,71 @@
     align-items: center;
     text-align: center;
     padding: 20px 10px;
-    width: 222px;
+    width: 220px;
     color: $black;
     background-color: $white;
     font-size: $fontsize-s;
     border: 1px solid $gray_gainsboro;
     margin: 0 0 -1px;
+  }
+}
+
+.even {
+  ul {
+    list-style: none;
+  }
+  li:nth-child(1) {
+    background-color: $orange_nistre;
+    height: 60px;
+    width: 220px;
+    font-size: $fontsize-l;
+    font-weight: bold;
+    color: $white;
+    margin: 0 0 -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li:nth-child(2) {
+    height: 140px;
+    background-color: $gray_desertStorm;
+    color: $orange_nistre;
+    font-weight: bold;
+    font-size: $fontsize-xxl;
+    border-right: solid 5px $orange-nistre;
+    border-left: solid 5px $orange-nistre;
+    width: 220px;
+    text-align: center;
+    padding: 24px 0px;
+
+    &:before {
+      content: "¥";
+      font-size: $fontsize-l;
+    }
+
+    p {
+      font-size: $fontsize-s;
+      color: $black;
+      font-weight: normal;
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+  li:nth-child(n + 3) {
+    border-right: 5px solid $orange-nistre;
+    border-left: 5px solid $orange-nistre;
+    border-bottom: 1px solid $gray_desertStorm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    width: 220px;
+    color: $black;
+    background-color: $white;
+    font-size: $fontsize-s;
+  }
+  li:nth-child(6) {
+    border-bottom: 5px solid $orange-nistre;
   }
 }
