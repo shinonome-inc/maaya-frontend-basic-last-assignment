@@ -2,134 +2,151 @@
 
 .odd {
   ul {
+    width: 540px;
     list-style: none;
-
-    li:nth-child(1) {width:540px;
-      height: 68px;
-      background-color: $orange_zorba;
-      @media screen and (min-width: $breakpoint-md) {
-       
-        width: 220px;
-      }
-
-      font-size: $fontsize-l;
-      font-weight: bold;
-      color: $white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    li:nth-child(2) {width:540px;
-      height: 142px;
-      border: 1px solid $gray_gainsboro;
-      background-color: $gray_desertStorm;
-      color: $orange_nistre;
-      font-weight: bold;
-      font-size: $fontsize-xxl;
-      margin: 0 0 -1px;
-      height: 68px;
-      
-      text-align: center;
-      padding: 24px 0px;
-
-      &:before {
-        content: "¥";
-        font-size: $fontsize-l;
-      }
-
-      p {
-        font-size: $fontsize-s;
-        color: $black;
-        font-weight: normal;
-        text-align: center;
-        margin-top: 16px;
-      }
-      @media screen and (min-width: $breakpoint-md){ height:142px;
-        width: 220px;
-        
-        }
-     
-
-      
-    }
-    li:nth-child(n + 3) {width:540px;
-      border: 1px solid $gray_gainsboro;
-      margin: 0 0 -1px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px 10px;
-      height: 60px;
-      @media screen and (min-width: $breakpoint-md){width: 220px;
-       }
-      
-      color: $black;
-      background-color: $white;
-      font-size: $fontsize-s;
-    }
-    li:nth-child(6) {height: 80px;
-      @media screen and (min-width: $breakpoint-md){}
-     
-    }
-  }
-}
-
-.even {
-  ul {
-    list-style: none;
-    padding: 0;
-    border: 5px solid $orange_nistre;
-    width: 220px;
-    box-sizing: border-box;
 
     li:nth-child(1) {
-      background-color: $orange_nistre;
-      height: 58px;
+      height: 68px;
+      background-color: $orange_zorba;
       font-size: $fontsize-l;
       font-weight: bold;
       color: $white;
-
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 220px;
+      }
     }
     li:nth-child(2) {
       height: 142px;
-
+      border: 1px solid $gray_gainsboro;
       background-color: $gray_desertStorm;
       color: $orange_nistre;
       font-weight: bold;
       font-size: $fontsize-xxl;
-      text-align: center;
-      padding: 24px 0px;
+      margin: 0 0 -1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-      &:before {
-        content: "¥";
-        font-size: $fontsize-l;
+      h1 {
+        span {
+          content: "¥";
+          font-size: $fontsize-l;
+        }
+        color: $orange_nistre;
+        font-weight: bold;
+        font-size: $fontsize-xxl;
+        margin-bottom: 16px;
+        margin-top: 24px;
       }
-
       p {
         font-size: $fontsize-s;
         color: $black;
         font-weight: normal;
-        text-align: center;
-        margin-top: 16px;
+      }
+      @media screen and (min-width: $breakpoint-md) {
+        width: 220px;
       }
     }
     li:nth-child(n + 3) {
+      width: 540px;
       border: 1px solid $gray_gainsboro;
       margin: 0 0 -1px;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px 10px;
       height: 60px;
-
       color: $black;
       background-color: $white;
       font-size: $fontsize-s;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 220px;
+      }
+    }
+    li:nth-child(6) {
+      height: 80px;
+    }
+  }
+}
+.even {
+  ul {
+    padding: 0;
+    width: 540px;
+    border: 5px solid $orange_nistre;
+    list-style: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+      width: 220px;
+    }
+    li:nth-child(1) {
+      height: 68px;
+      background-color: $orange_nistre;
+      font-size: $fontsize-l;
+      font-weight: bold;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 210px;
+      }
+    }
+    li:nth-child(2) {
+      height: 142px;
+      border: 1px solid $gray_gainsboro;
+      background-color: $gray_desertStorm;
+      color: $orange_nistre;
+      font-weight: bold;
+      font-size: $fontsize-xxl;
+      margin: 0 0 -1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        span {
+          content: "¥";
+          font-size: $fontsize-l;
+        }
+        color: $orange_nistre;
+        font-weight: bold;
+        font-size: $fontsize-xxl;
+        margin-bottom: 16px;
+        margin-top: 24px;
+      }
+      p {
+        font-size: $fontsize-s;
+        color: $black;
+        font-weight: normal;
+      }
+      @media screen and (min-width: $breakpoint-md) {
+        width: 210px;
+      }
+    }
+    li:nth-child(n + 3) {
+      width: 530px;
+      border: 1px solid $gray_gainsboro;
+      margin: 0 0 -1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 60px;
+      color: $black;
+      background-color: $white;
+      font-size: $fontsize-s;
+
+      @media screen and (min-width: $breakpoint-md) {
+        width: 210px;
+      }
     }
     li:nth-child(6) {
       height: 80px;
