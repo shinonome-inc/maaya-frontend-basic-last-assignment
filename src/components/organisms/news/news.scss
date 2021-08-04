@@ -1,26 +1,38 @@
 @use "../../variables" as *;
 
-a:hover {
-  text-decoration: none;
-}
-
-article {
-  background-color: $white;
-  width: 458px;
-  height: 83px;
-  border: 1px solid $gray_gainsboro;
-  margin: 0 0 -1px;
+.catalog-wrapper {
+  width: 460px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
 
-  time {
-    font-size: $fontsize-xs;
-    color: $gray_gainsboro;
+    article {
+      background-color: $white;
+      width: 460px;
+      height: 85px;
+      border: 1px solid $gray_gainsboro;
+      margin: 0 0 -1px;
+      padding: 20px;
+
+      time {
+        font-size: $fontsize-xs;
+        color: $gray_gainsboro;
+      }
+      p {
+        color: $black;
+        font-size: $fontsize-m;
+        &:hover {
+          transition: 0.2s ease;
+          color: $orange_nistre;
+        }
+      }
+    }
   }
-  p {
-    color: $black;
-    font-size: $fontsize-m;
+  .more {
+    margin-top: 30px;
+    margin-left:auto;
   }
 }
