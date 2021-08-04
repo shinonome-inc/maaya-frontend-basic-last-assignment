@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.catalog {
+  color: $black;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    margin-right: 16px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: $fontsize-xxl;
+    }
+  }
+
+  h2 {
+    font-size: $fontsize-m;
+  }
+}
