@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+a {
+  display: flex;
+  align-items: center;
+  transition: ease 0.2s;
+  font-size: $fontsize-s;
+  color: $black;
+
+  i {
+    margin-left: 16px;
+  }
+
+  &:hover {
+    color: $gray_novel;
+    text-decoration: none;
+  }
+}
