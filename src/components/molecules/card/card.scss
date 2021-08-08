@@ -2,18 +2,9 @@
 
 .card {
   border-radius: 0;
-  height: 567px;
 
-  @media screen and (min-width: $breakpoint-md) {
-    height: 359px;
-
-    &:hover {
-      height: 354px;
-    }
-  }
-  .head {
+  .card-all {
     overflow: hidden;
-    height: 382px;
 
     &::before {
       z-index: 2;
@@ -22,13 +13,7 @@
       border-left: 150px solid $white;
       position: absolute;
     }
-    @media screen and (min-width: $breakpoint-md) {
-      height: 176px;
 
-      &:hover {
-        height: 171px;
-      }
-    }
     h1 {
       left: 6px;
       z-index: 2;
@@ -53,10 +38,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 32px;
 
-    p {
+    span {
       font-size: $fontsize-s;
       color: $black;
+      margin-bottom: 30px;
     }
   }
 }
