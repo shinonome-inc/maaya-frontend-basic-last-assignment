@@ -1,37 +1,36 @@
 @use "../../variables" as *;
 
-.odd,
-.even {
-  width: 540px;
+.plan-odd,
+.plan-even {
   padding: 0;
   list-style: none;
   margin-bottom: 24px;
-  @media screen and (min-width: $breakpoint-md) {
-    width: 220px;
-  }
+
   li {
     font-size: $fontsize-s;
     color: $black;
-    font-weight: none;
+    font-weight: 0;
     padding: 20px;
     text-align: center;
-    &:nth-child(1) {
+    border: 1px solid $gray_gainsboro;
+    &:first-child {
       font-size: $fontsize-l;
       background-color: $orange_zorba;
       font-weight: bold;
       color: $white;
+      border: 0;
     }
     &:nth-child(2) {
       background-color: $gray_desertStorm;
-      border: 1px solid $gray_gainsboro;
-      padding: 0;
-      h1 {
+
+      .price {
         color: $orange_nistre;
         font-weight: bold;
         font-size: $fontsize-xxl;
         margin-bottom: 16px;
         margin-top: 24px;
-        height: 58px;
+
+        display: block;
 
         &::before {
           content: "¥";
@@ -39,13 +38,13 @@
           font-size: $fontsize-l;
         }
       }
-      p {
+      .month {
         margin-bottom: 24px;
+        display: block;
       }
     }
     &:nth-child(n + 3) {
-      border: 1px solid $gray_gainsboro;
-      border-top: none;
+      border-top: 0;
     }
   }
 }
