@@ -1,27 +1,39 @@
 @use "../../variables" as *;
 
-.catalog-wrapper {
-  width: 460px;
+.news {display: flex;
+  flex-direction: column;
+
 
   .catalog {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
+
   .article-all {
     margin-bottom: 30px;
+    border: 1px solid $gray_gainsboro;
 
     article {
       background-color: $white;
+      border-bottom: 1px solid $gray_gainsboro;
 
-      border: 1px solid $gray_gainsboro;
-      margin: 0 0 -1px;
+      &:nth-child(5) {
+        border-bottom: 0;
+      }
 
       a {
         padding: 20px;
         display: block;
+
+        &:hover {
+          transition: ease 0.2s;
+          color: $orange_nistre;
+        }
+
         time {
           font-size: $fontsize-xs;
-          color: $gray_gainsboro;
+          color: $gray_novel;
         }
+
         p {
           overflow: hidden;
           text-overflow: ellipsis;
@@ -30,15 +42,14 @@
           color: $black;
           margin-top: 10px;
           font-size: $fontsize-m;
-          &:hover {
-            transition: 0.2s ease;
-            color: $orange_nistre;
-          }
+          transition: color;
         }
       }
     }
   }
+
   .more {
-    float: right;
+    margin-left: auto;
+ 
   }
 }
