@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
-.plan-odd,
-.plan-even {
+.plan-nomal,
+.plan-bold {
   padding: 0;
   list-style: none;
   margin-bottom: 24px;
@@ -9,10 +9,10 @@
   li {
     font-size: $fontsize-s;
     color: $black;
-    font-weight: 0;
     padding: 20px;
     text-align: center;
     border: 1px solid $gray_gainsboro;
+    
     &:first-child {
       font-size: $fontsize-l;
       background-color: $orange_zorba;
@@ -48,8 +48,9 @@
     }
   }
 }
-.plan-even {
+.plan-bold {
   border: 5px solid $orange_nistre;
+
   li:nth-child(1) {
     background-color: $orange_nistre;
   }
