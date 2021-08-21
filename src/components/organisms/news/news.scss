@@ -1,8 +1,8 @@
 @use "../../variables" as *;
 
-.news {display: flex;
+.news {
+  display: flex;
   flex-direction: column;
-
 
   .catalog {
     margin-bottom: 32px;
@@ -10,24 +10,17 @@
 
   .article-all {
     margin-bottom: 30px;
-    border: 1px solid $gray_gainsboro;
+    border-left: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-top: 1px solid $gray_gainsboro;
 
     article {
       background-color: $white;
       border-bottom: 1px solid $gray_gainsboro;
 
-      &:nth-child(5) {
-        border-bottom: 0;
-      }
-
       a {
         padding: 20px;
         display: block;
-
-        &:hover {
-          transition: ease 0.2s;
-          color: $orange_nistre;
-        }
 
         time {
           font-size: $fontsize-xs;
@@ -43,6 +36,11 @@
           margin-top: 10px;
           font-size: $fontsize-m;
           transition: color;
+          transition: ease 0.2s;
+
+          &:hover {
+            color: $orange_nistre;
+          }
         }
       }
     }
@@ -50,6 +48,5 @@
 
   .more {
     margin-left: auto;
- 
   }
 }
