@@ -12,7 +12,7 @@
     padding: 20px;
     text-align: center;
     border: 1px solid $gray_gainsboro;
-    
+
     &:first-child {
       font-size: $fontsize-l;
       background-color: $orange_zorba;
@@ -29,7 +29,6 @@
         font-size: $fontsize-xxl;
         margin-bottom: 16px;
         margin-top: 24px;
-
         display: block;
 
         &::before {
