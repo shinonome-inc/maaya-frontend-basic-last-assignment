@@ -1,0 +1,56 @@
+@use "../../variables" as *;
+
+.plan-normal,
+.plan-bold {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 24px;
+
+  li {
+    font-size: $fontsize-s;
+    color: $black;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid $gray_gainsboro;
+
+    &:first-child {
+      font-size: $fontsize-l;
+      background-color: $orange_zorba;
+      font-weight: bold;
+      color: $white;
+      border: 0;
+    }
+    &:nth-child(2) {
+      background-color: $gray_desertStorm;
+
+      .price {
+        color: $orange_nistre;
+        font-weight: bold;
+        font-size: $fontsize-xxl;
+        margin-bottom: 16px;
+        margin-top: 24px;
+        display: block;
+
+        &::before {
+          content: "¥";
+          margin-right: 4px;
+          font-size: $fontsize-l;
+        }
+      }
+      .month {
+        margin-bottom: 24px;
+        display: block;
+      }
+    }
+    &:nth-child(n + 3) {
+      border-top: 0;
+    }
+  }
+}
+.plan-bold {
+  border: 5px solid $orange_nistre;
+
+  li:nth-child(1) {
+    background-color: $orange_nistre;
+  }
+}
