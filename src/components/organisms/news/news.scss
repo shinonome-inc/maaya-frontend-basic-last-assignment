@@ -1,0 +1,52 @@
+@use "../../variables" as *;
+
+.news {
+  display: flex;
+  flex-direction: column;
+
+  .catalog {
+    margin-bottom: 32px;
+  }
+
+  .article-all {
+    margin-bottom: 30px;
+    border-left: 1px solid $gray_gainsboro;
+    border-right: 1px solid $gray_gainsboro;
+    border-top: 1px solid $gray_gainsboro;
+
+    article {
+      background-color: $white;
+      border-bottom: 1px solid $gray_gainsboro;
+
+      a {
+        padding: 20px;
+        display: block;
+
+        time {
+          font-size: $fontsize-xs;
+          color: $gray_novel;
+        }
+
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 0;
+          color: $black;
+          margin-top: 10px;
+          font-size: $fontsize-m;
+          transition: color;
+          transition: ease 0.2s;
+
+          &:hover {
+            color: $orange_nistre;
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    margin-left: auto;
+  }
+}
